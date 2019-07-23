@@ -5,14 +5,23 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-var tableArray = [
+var existingTableArray = [
   {
-    customerName: "Ahmed",
-    customerEmail: "ahmed@example.com",
-    customerID: "afhaque89",
-    phoneNumber: "000-000-0000"
+      existingName: "Existing User 1",
+      existingA1: "1",
+      existingA2: "2",
+      existingA3: "3",
+      existingA4: "4",
+      existingA5: "5",
+      existingA6: "1",
+      existingA7: "2",
+      existingA8: "3",
+      existingA9: "4",
+      existingA10: "5"
+    }
+  ];
   }
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
-module.exports = tableArray;
+module.exports = existingTableArray;
