@@ -252,8 +252,8 @@
     <footer class="footer">
       <div class="container">
         <p>
-          <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a>
+          <!-- <a href="/api/tables">API Table Link</a> |
+          <a href="/api/waitlist">API Wait List</a> -->
       </div>
     </footer>
 
@@ -293,7 +293,22 @@
       a8: $("#a8"),
       a9: $("#a9"),
       a10: $("#a10"),
-    };
+      scores: [1,1,1,1,1,1,1,1,1,1]
+    }
+    
+    $.post("/newFriendData", newTableArray)
+            .then(function(serverData){
+​
+                console.log(serverData)
+                 alert("added")
+                
+            })
+
+
+
+          })
+    
+    ;
 
 
 
@@ -363,6 +378,6 @@
         $("#a10");
       });
 
-  });
+  // });
 
 </script>
