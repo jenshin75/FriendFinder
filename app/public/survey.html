@@ -375,7 +375,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <h2 id="modalName"></h2>
-	        <h2>photo</h2>
+	        <h2 id="modalPhoto"></h2>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -385,16 +385,6 @@
 	  </div>
   </div>
   
-
-
-
-
-
-
-
-
-
-
     <footer class="footer">
       <div class="container">
         <p>
@@ -449,9 +439,8 @@
       console.log("You are most compatible with: ", bestmatch)
         // you need to show the user name and picture of the best match
         // (receive the name and the pic )   
-
         $("#modalName").append(bestmatch.name);
-
+        $("#modalPhoto").append(bestmatch.photo);
       })
 
       console.log('Display Modal');
