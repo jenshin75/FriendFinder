@@ -44,203 +44,316 @@
           </div>
           <div class="card-body">
             <form role="form">
+
               <div class="form-group">
                 <p class="font-weight-bold">About You</p>
-                <label for="reserve-name">What is your full name? This is required.</label>
-                <input type="text" class="form-control" id="reserve-name">
-              </div>
-
-              <!-- <div class="form-group">
-                <label for="reserve-phone">Link to your photo.</label>
-                <input type="text" class="form-control" id="reserve-phone">
-              </div> -->
-
-              <!-- <div class="form-group">
-                <label for="reserve-email">Email</label>
-                <input type="text" class="form-control" id="reserve-email">
+                <label for="name">What is your name? (This is required)</label>
+                <input type="text" class="form-control" id="name">
               </div>
 
               <div class="form-group">
-                <label for="reserve-unique-id">Unique ID</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
-              </div> -->
+                <label for="photo">Photo (This is required)</label>
+                <input type="text" class="form-control" id="photo">
+              </div>
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 1</p>
+                <label for="q1">What age group do you prefer?</label>
+                <select id="q1" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Younger</option>
+                  <option value="2">2 = Older</option>
+                  <option value="3">3 = Same age and younger</option>
+                  <option value="4">4 = Same age and older</option>
+                  <option value="5">5 = Doesn't matter</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 1</p>
                 <p class="font-weight-normal">What age group do you prefer?</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q01"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Younger</button>
-                  <button class="dropdown-item" type="button">2 = Older</button>
-                  <button class="dropdown-item" type="button">3 = Same age and younger</button>
-                  <button class="dropdown-item" type="button">4 = Same age and older</button>
-                  <button class="dropdown-item" type="button">5 = Doesn't matter</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Younger</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Older</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Same age and younger</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Same age and older</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Doesn't matter</button>
                 </div>
-              </div>
-              <br></br>
+              </div> -->
 
-              <div class="dropdown">
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 2</p>
                 <p class="font-weight-normal">What is your current hair color?</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q02"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Auburn</button>
-                  <button class="dropdown-item" type="button">2 = Black</button>
-                  <button class="dropdown-item" type="button">3 = Blonde</button>
-                  <button class="dropdown-item" type="button">4 = Brown</button>
-                  <button class="dropdown-item" type="button">5 = Red</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Auburn</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Black</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Blonde</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Brown</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Red</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 2</p>
+                <label for="q2">What is your current hair color?</label>
+                <select id="q2" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Auburn</button>
+                  <option value="2">2 = Black</option>
+                  <option value="3">3 = Blonde</option>
+                  <option value="4">4 = Brown</option>
+                  <option value="5">5 = Red</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 3</p>
                 <p class="font-weight-normal">What do you look first in others?</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q03"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Enthusiasm</button>
-                  <button class="dropdown-item" type="button">2 = Honesty</button>
-                  <button class="dropdown-item" type="button">3 = Humor</button>
-                  <button class="dropdown-item" type="button">4 = Intelligence</button>
-                  <button class="dropdown-item" type="button">5 = Looks</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Enthusiasm</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Honesty</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Humor</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Intelligence</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Looks</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 3</p>
+                <label for="q3">What do you look first in others?</label>
+                <select id="q3" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Enthusiasm</button>
+                  <option value="2">2 = Honesty</option>
+                  <option value="3">3 = Humor</option>
+                  <option value="4">4 = Intelligence</option>
+                  <option value="5">5 = Looks</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 4</p>
                 <p class="font-weight-normal">The most annoying sound is: </p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q04"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Car alarms</button>
-                  <button class="dropdown-item" type="button">2 = Cicadas</button>
-                  <button class="dropdown-item" type="button">3 = Emergency broadcast system</button>
-                  <button class="dropdown-item" type="button">4 = Fingernails on a chalkboard</button>
-                  <button class="dropdown-item" type="button">5 = Jim Carrey in Dumb and Dumber</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Car alarms</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Cicadas</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Emergency broadcast system</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Fingernails on a chalkboard</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Jim Carrey in Dumb and Dumber</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 4</p>
+                <label for="q4">The most annoying sound is:</label>
+                <select id="q4" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Car alarms</button>
+                  <option value="2">2 = Cicadas</option>
+                  <option value="3">3 = Emergency broadcast system</option>
+                  <option value="4">4 = Fingernails on a chalkboard</option>
+                  <option value="5">5 = Jim Carrey in Dumb and Dumber</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 5</p>
                 <p class="font-weight-normal">After work, I usually: </p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q05"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Relax</button>
-                  <button class="dropdown-item" type="button">2 = Shop</button>
-                  <button class="dropdown-item" type="button">3 = Sleep</button>
-                  <button class="dropdown-item" type="button">4 = Read or study</button>
-                  <button class="dropdown-item" type="button">5 = Work more</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Relax</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Shop</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Sleep</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Read or study</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Work more</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 5</p>
+                <label for="q5">After work, I usually: </label>
+                <select id="q5" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Relax</button>
+                  <option value="2">1 = Relax</option>
+                  <option value="3">3 = Sleep</option>
+                  <option value="4">4 = Read or study</option>
+                  <option value="5">5 = Work more</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 6</p>
                 <p class="font-weight-normal">In the animal kingdom, you would be a: </p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q06"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Bull</button>
-                  <button class="dropdown-item" type="button">2 = Crocodile</button>
-                  <button class="dropdown-item" type="button">3 = Lion</button>
-                  <button class="dropdown-item" type="button">4 = Pussycat</button>
-                  <button class="dropdown-item" type="button">5 = Snake</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Bull</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Crocodile</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Lion</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Pussycat</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Snake</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 6</p>
+                <label for="q6">In the animal kingdom, you would be a: </label>
+                <select id="q6" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Bull</button>
+                  <option value="2">2 = Crocodile</option>
+                  <option value="3">3 = Lion</option>
+                  <option value="4">4 = Pussycat</option>
+                  <option value="5">5 = Snake</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 7</p>
                 <p class="font-weight-normal">What would you prefer to do on a date?</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q07"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Cuddle on the couch</button>
-                  <button class="dropdown-item" type="button">2 = Go out for dinner</button>
-                  <button class="dropdown-item" type="button">3 = Go to a movie</button>
-                  <button class="dropdown-item" type="button">4 = Rent a video</button>
-                  <button class="dropdown-item" type="button">5 = Walk in the park</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Cuddle on the couch</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Go out for dinner</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Go to a movie</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Rent a video</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Walk in the park</button>
                 </div>
+              </div> -->
+
+              <div class="form-group">
+                <p class="font-weight-bold">Question 7</p>
+                <label for="q7">What would you prefer to do on a date?</label>
+                <select id="q7" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Cuddle on the couch</button>
+                  <option value="2">2 = Go out for dinner</option>
+                  <option value="3">3 = Go to a movie</option>
+                  <option value="4">4 = Rent a video</option>
+                  <option value="5">5 = Walk in the park</option>
+                </select>
               </div>
 
-              <br></br>
-
+              <!-- 
               <div class="dropdown">
                 <p class="font-weight-bold">Question 8</p>
                 <p class="font-weight-normal">Do you enjoy participating in sports?</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q08"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = All the time</button>
-                  <button class="dropdown-item" type="button">2 = Sometimes</button>
-                  <button class="dropdown-item" type="button">3 = Rarely</button>
-                  <button class="dropdown-item" type="button">4 = Very rarely</button>
-                  <button class="dropdown-item" type="button">5 = Never</button>
+                  <button class="dropdown-item" value="1" type="button">1 = All the time</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Sometimes</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Rarely</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Very rarely</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Never</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 8</p>
+                <label for="q8">Do you enjoy participating in sports?</label>
+                <select id="q8" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = All the time</button>
+                  <option value="2">2 = Sometimes</option>
+                  <option value="3">3 = Rarely</option>
+                  <option value="4">4 = Very rarely</option>
+                  <option value="5">5 = Never</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 9</p>
-                <p class="font-weight-normal">What is your favorite food</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <p class="font-weight-normal">What is your favorite food?</p>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q09"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Burger and fries</button>
-                  <button class="dropdown-item" type="button">2 = Chicken</button>
-                  <button class="dropdown-item" type="button">3 = Pizza</button>
-                  <button class="dropdown-item" type="button">4 = Tacos</button>
-                  <button class="dropdown-item" type="button">5 = Sushi</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Burger and fries</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Chicken</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Pizza</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Tacos</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Sushi</button>
                 </div>
               </div>
-              <br></br>
+              <br></br> -->
 
-              <div class="dropdown">
+              <div class="form-group">
+                <p class="font-weight-bold">Question 9</p>
+                <label for="q9">What is your favorite food?</label>
+                <select id="q9" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Burger and fries</button>
+                  <option value="2">2 = Chicken</option>
+                  <option value="3">3 = Pizza</option>
+                  <option value="4">4 = Tacos</option>
+                  <option value="5">5 = Sushi</option>
+                </select>
+              </div>
+
+              <!-- <div class="dropdown">
                 <p class="font-weight-bold">Question 10</p>
                 <p class="font-weight-normal">Most of my money is spent on:</p>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="q10"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select an answer
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">1 = Clothes</button>
-                  <button class="dropdown-item" type="button">2 = Food</button>
-                  <button class="dropdown-item" type="button">3 = Friends</button>
-                  <button class="dropdown-item" type="button">4 = Movies</button>
-                  <button class="dropdown-item" type="button">5 = Music</button>
+                  <button class="dropdown-item" value="1" type="button">1 = Clothes</button>
+                  <button class="dropdown-item" value="2" type="button">2 = Food</button>
+                  <button class="dropdown-item" value="3" type="button">3 = Friends</button>
+                  <button class="dropdown-item" value="4" type="button">4 = Movies</button>
+                  <button class="dropdown-item" value="5" type="button">5 = Music</button>
                 </div>
+              </div> -->
+
+              <div class="form-group">
+                <p class="font-weight-bold">Question 10</p>
+                <label for="q10">Most of my money is spent on:</label>
+                <select id="q10" class="form-control">
+                  <option selected>Select an answer</option>
+                  <option value="1">1 = Clothes</button>
+                  <option value="2">2 = Food</option>
+                  <option value="3">3 = Friends</option>
+                  <option value="4">4 = Movies</option>
+                  <option value="5">5 = Music</option>
+                </select>
               </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
+              <br><br>
               <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
           </div>
@@ -249,11 +362,43 @@
     </div>
 
 
+<!-- Modal -->
+
+<div id="results" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h2 class="modal-title"><strong>Best Match</strong></h2>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="modalName"></h2>
+	        <h2>photo</h2>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
     <footer class="footer">
       <div class="container">
         <p>
-          <!-- <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a> -->
+          <a href="/api/friends">API Friends Link</a>
       </div>
     </footer>
 
@@ -273,111 +418,44 @@
   $(".submit").on("click", function (event) {
     event.preventDefault();
 
-    // Here we grab the form elements
-    // var newReservation = {
-    //   customerName: $("#reserve-name").val().trim(),
-    //   phoneNumber: $("#reserve-phone").val().trim(),
-    //   customerEmail: $("#reserve-email").val().trim(),
-    //   customerID: $("#reserve-unique-id").val().trim()
-    // };
+    //1. get the scores from the survey
+    //2. get the photo
+    //3. when come back show the results the user
+    var scoreArray = [
+      $("#q1").val(),
+      $("#q2").val(),
+      $("#q3").val(),
+      $("#q4").val(),
+      $("#q5").val(),
+      $("#q6").val(),
+      $("#q7").val(),
+      $("#q8").val(),
+      $("#q9").val(),
+      $("#q10").val()
+    ];
 
-      var newFriend = {
-      name: $("#name").val().trim(),
-      a1: $("#a1"),
-      a2: $("#a2"),
-      a3: $("#a3"),
-      a4: $("#a4"),
-      a5: $("#a5"),
-      a6: $("#a6"),
-      a7: $("#a7"),
-      a8: $("#a8"),
-      a9: $("#a9"),
-      a10: $("#a10"),
-      scores: [1,1,1,1,1,1,1,1,1,1]
+    var newFriend = {
+      name: $("#name").val(),
+      photo: $("#photo").val(),
+      scores: scoreArray
     }
-    
-    $.post("/newFriendData", newTableArray)
-            .then(function(serverData){
-​
-                console.log(serverData)
-                 alert("added")
-                
-            })
-
-
-
-          })
-    
-    ;
-
-
-
-//*************************************phil's logic start*****************************
-//     $("#submit").on("click", function (event) {
-//             event.preventDefault();
-// ​
-//             var newTable = {
-//                 name: $("#name").val().trim(),
-//                 phoneNumber:  $("#phone").val().trim(),
-//                 email:  $("#email").val().trim(),
-//                 uniqueID:   $("#uniqueID").val().trim(),
-//                 scores:[1,1,1,1,1,1,1,1,1,1],
-//                 photo:"https://www.liveabout.com/thmb/lDtQYBZTlzReTjDJyJVT1yav3e0=/2550x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/simp_Mr_Burns-3_hires1-56d695815f9b582ad501c2a5.jpg"
-//             }
-//             $.post("/reserve", newTable)
-//             .then(function(serverData){
-// ​
-//                 console.log(serverData)
-//                  alert("added")
-                
-//             })
-
-
-
-//           })
-
-//*************************************phil's logic end*****************************
-
-
-
-
-
-
-
     console.log(newFriend);
 
-    // This line is the magic. It"s very similar to the standard ajax function we used.
-    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-    // depending on if a tables is available or not.
+  
 
-    $.post("data/newFriendData", newFriend,
-      function (data) {
 
-        // If a table is available... tell user they are booked.
-        if (data) {
-          alert("Congratulations! You are officially registered!");
-        }
 
-        // If a table is available... tell user they on the waiting list.
-        else {
-          alert("Sorry you are on the wait list");
-        }
+    $.post("/api/friends", newFriend, function (bestmatch) {
+      console.log("You are most compatible with: ", bestmatch)
+        // you need to show the user name and picture of the best match
+        // (receive the name and the pic )   
 
-        // Clear the form when submitting
-        $("#name").val("");
-        $("#a1");
-        $("#a2");
-        $("#a3");
-        $("#a4");
-        $("#a5");
-        $("#a6");
-        $("#a7");
-        $("#a8");
-        $("#a9");
-        $("#a10");
-      });
+        $("#modalName").append(bestmatch.name);
 
-  // });
+      })
+
+      console.log('Display Modal');
+            $('#results').modal('show');
+  });
 
 </script>
